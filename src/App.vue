@@ -1,29 +1,12 @@
 <template>
-  <div id="app">
-    <img
-      src="./assets/logo.png"
-      alt=""
-    >
-    <div>
-      <p>
-        If iView is successfully added to this project, you'll see an
-        <code v-text="'<Button>'" />
-        below
-      </p>
-      <van-button type="primary">
-        Button
-      </van-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <div id="app" />
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
