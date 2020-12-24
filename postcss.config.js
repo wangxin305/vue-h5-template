@@ -1,6 +1,6 @@
-const path = require('path');
 module.exports = ({ file }) => {
-  const designWidth = file.dirname.includes(path.join('node_modules', 'vant')) ? 375 : 1080;
+  let isVant = file && file.dirname && file.dirname.indexOf("vant") > -1;
+  let designWidth = isVant ? 375 : 1080;
   return {
     plugins: {
       autoprefixer: {},
