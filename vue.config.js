@@ -1,4 +1,4 @@
-// const pxtovw = require('postcss-px-to-viewport');
+const config = require('./src/config.js')
 const path = require('path');
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -12,6 +12,7 @@ module.exports = {
       : '/',
   lintOnSave: false,
   productionSourceMap: false,
+  outputDir:config.dirName,
   devServer: {
     port: port,
     open: true,
